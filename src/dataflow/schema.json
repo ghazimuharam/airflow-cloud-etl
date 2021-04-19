@@ -1,0 +1,23 @@
+{
+    "BigQuery Schema": [
+    {
+        "name": "user_id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "search_keyword",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "search_result_count",
+        "type": "INTEGER",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "created_at",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    }]
+}
