@@ -44,7 +44,7 @@ schema = {'keyword': [
     bigquery.SchemaField("transaction_number",
                          "STRING"),
     bigquery.SchemaField("transaction_datetime",
-                         "DATETIME"),
+                         "STRING"),
     bigquery.SchemaField("purchase_quantity",
                          "INTEGER"),
     bigquery.SchemaField("purchase_amount",
@@ -62,9 +62,9 @@ schema = {'keyword': [
     bigquery.SchemaField("city",
                          "STRING"),
     bigquery.SchemaField(
-        "created_at", "DATETIME", mode="REQUIRED"),
+        "created_at", "STRING", mode="REQUIRED"),
     bigquery.SchemaField(
-        "ex_created_at", "DATETIME", mode="REQUIRED"),
+        "ext_created_at", "STRING", mode="REQUIRED"),
 ]}
 
 
