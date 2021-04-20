@@ -82,7 +82,7 @@ class IntegrateTransactionOperator(BaseOperator):
 
             try:
                 transaction['purchase_source'] = event_params['purchase_source']['string_value']
-            except KeyError:
+            except TypeError:
                 transaction['purchase_source'] = ''
 
             transaction['product_id'] = int(
