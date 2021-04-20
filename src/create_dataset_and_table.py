@@ -9,6 +9,11 @@ class CreateDatasetHelper:
         self.dataset_name = dataset_name  # Dataset name
         self.client = bigquery.Client(self.project)
 
+        try:
+            self.create_dataset()
+        except:
+            pass
+
     def create_dataset(self):
         dataset_id = f"{self.project}.{self.dataset_name}"
 
